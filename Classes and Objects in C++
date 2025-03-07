@@ -1,6 +1,3 @@
-// Design a class Employee with private data members: employeeID,
-// name, and department. Use a parameterized constructor to initialize the object.
-
 #include<bits/stdc++.h>
 using namespace std;
 class object
