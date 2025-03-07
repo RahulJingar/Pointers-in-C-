@@ -1,0 +1,40 @@
+// Design a class Employee with private data members: employeeID,
+// name, and department. Use a parameterized constructor to initialize the object.
+
+#include<bits/stdc++.h>
+using namespace std;
+class object
+{
+    int employeId;
+    string name;
+    string department;
+    public:
+    object()
+    {
+        employeId=0;
+        name="null";
+        department="null";
+    }
+    void display()
+    {
+        cout<<"employe id:"<<employeId<<", "<<"name:"<<name<<", "<<"department:"<<", "<<department<<endl;
+    }
+    void getdata()
+    {
+        cout<<"your employe id is:";
+        cin>>employeId;
+        cout<<"your name is:";
+        cin>>name;
+        cout<<"department:";
+        cin>>department;
+    }
+};
+int main()
+{
+    object *ptr = new object;
+    ptr->display();
+    ptr->getdata();
+    ptr->display();
+    delete ptr;
+    return 0;
+}
